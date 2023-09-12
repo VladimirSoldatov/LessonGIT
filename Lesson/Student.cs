@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lesson
 {
-    class Student:IComparable
+    public class Student:IComparable
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -24,5 +24,6 @@ namespace Lesson
         {
             return $"{FirstName} {LastName}";
         }
+ 
     }
 }

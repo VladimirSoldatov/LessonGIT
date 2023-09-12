@@ -12,19 +12,15 @@ namespace Lesson
         {
 
             IC s2 = new Lesson(1,5,10);//Не явное приведение типов
-            s2.Print();
+ 
             Auditory auditory = new Auditory();
-            foreach (var item in auditory)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine();
-            auditory.Sort();
-            foreach (var item in auditory)
-            {
-                Console.WriteLine(item);
-            }
-          ;
+
+            Console.WriteLine(auditory[3]);
+            Child a = new Child();
+            a.Age = 18;
+            Child b = (a.Clone() as Child);
+            Console.WriteLine(b.Age);
+            Console.WriteLine(b.student.StudentCard);
         }
     }
 }

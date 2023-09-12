@@ -16,7 +16,7 @@ namespace Lesson
         FirstName ="John",
         LastName ="Miller",
         BirthDate =new DateTime(1997,3,12),
-        StudentCard =new StudentCard 
+        StudentCard =new StudentCard
             {
                 Number=189356,Series= "AA"
             }
@@ -49,7 +49,7 @@ namespace Lesson
                        }
         };
 
-        public IEnumerator  GetEnumerator()
+        public IEnumerator GetEnumerator()
         {
             return students.GetEnumerator();
         }
@@ -58,5 +58,20 @@ namespace Lesson
         {
             Array.Sort(students);
         }
+        public int Length()
+        {
+            return students.Length;
+        }
+        public Student this[int index]
+        {
+            get
+            {
+                if(index>-1 && index < Length())
+                return students[index];
+                else
+                    throw new IndexOutOfRangeException();
+            }
+        }
+     
     }
 }
