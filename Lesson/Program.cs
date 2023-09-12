@@ -18,6 +18,12 @@ namespace Lesson
             {
                 Console.WriteLine(item);
             }
+            Console.WriteLine();
+            auditory.Sort();
+            foreach (var item in auditory)
+            {
+                Console.WriteLine(item);
+            }
           ;
         }
     }
