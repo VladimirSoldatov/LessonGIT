@@ -49,6 +49,11 @@ namespace Lesson
                        }
         };
 
+        public IEnumerator  GetEnumerator()
+        {
+            return students.GetEnumerator();
+        }
+
         public void Sort()
         {
             Array.Sort(students);

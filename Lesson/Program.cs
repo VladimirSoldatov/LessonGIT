@@ -13,7 +13,11 @@ namespace Lesson
 
             IC s2 = new Lesson(1,5,10);//Не явное приведение типов
             s2.Print();
-
+            Auditory auditory = new Auditory();
+            foreach (var item in auditory)
+            {
+                Console.WriteLine(item);
+            }
           ;
         }
     }

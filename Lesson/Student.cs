@@ -12,5 +12,9 @@ namespace Lesson
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
         public StudentCard StudentCard { get; set; }
+        public override string ToString()
+        {
+            return $"{FirstName} {LastName}";
+        }
     }
 }
